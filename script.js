@@ -5,6 +5,10 @@ function changer (id, newValue) {
 
 var input_box= document.getElementById('text');
 
-input_box.addEventListener('input',function(e){
+
+handler=function(e){
 	changer('text_copy',input_box.value);
-})
+}
+
+input_box.addEventListener('input',handler);
+
